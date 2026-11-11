@@ -1,0 +1,453 @@
+[
+  {
+    "trust_weight": 0.0,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.97265625,
+      "LIME": 0.765625,
+      "SHAP_Waterfall": 0.5390625
+    }
+  },
+  {
+    "trust_weight": 0.025,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.96357421875,
+      "LIME": 0.7626953125,
+      "SHAP_Waterfall": 0.5443359375
+    }
+  },
+  {
+    "trust_weight": 0.05,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.9544921875,
+      "LIME": 0.7597656249999999,
+      "SHAP_Waterfall": 0.549609375
+    }
+  },
+  {
+    "trust_weight": 0.075,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.94541015625,
+      "LIME": 0.7568359375000001,
+      "SHAP_Waterfall": 0.5548828125
+    }
+  },
+  {
+    "trust_weight": 0.1,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.936328125,
+      "LIME": 0.75390625,
+      "SHAP_Waterfall": 0.56015625
+    }
+  },
+  {
+    "trust_weight": 0.125,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.92724609375,
+      "LIME": 0.7509765625,
+      "SHAP_Waterfall": 0.5654296875
+    }
+  },
+  {
+    "trust_weight": 0.15,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.9181640625,
+      "LIME": 0.748046875,
+      "SHAP_Waterfall": 0.570703125
+    }
+  },
+  {
+    "trust_weight": 0.175,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.90908203125,
+      "LIME": 0.7451171874999999,
+      "SHAP_Waterfall": 0.5759765625
+    }
+  },
+  {
+    "trust_weight": 0.2,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.9,
+      "LIME": 0.7421875000000001,
+      "SHAP_Waterfall": 0.58125
+    }
+  },
+  {
+    "trust_weight": 0.225,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.89091796875,
+      "LIME": 0.7392578125,
+      "SHAP_Waterfall": 0.5865234375
+    }
+  },
+  {
+    "trust_weight": 0.25,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.8818359375,
+      "LIME": 0.736328125,
+      "SHAP_Waterfall": 0.591796875
+    }
+  },
+  {
+    "trust_weight": 0.275,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.87275390625,
+      "LIME": 0.7333984375,
+      "SHAP_Waterfall": 0.5970703125
+    }
+  },
+  {
+    "trust_weight": 0.3,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.863671875,
+      "LIME": 0.7304687499999999,
+      "SHAP_Waterfall": 0.60234375
+    }
+  },
+  {
+    "trust_weight": 0.325,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.85458984375,
+      "LIME": 0.7275390625000001,
+      "SHAP_Waterfall": 0.6076171875
+    }
+  },
+  {
+    "trust_weight": 0.35,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.8455078125,
+      "LIME": 0.724609375,
+      "SHAP_Waterfall": 0.612890625
+    }
+  },
+  {
+    "trust_weight": 0.375,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.83642578125,
+      "LIME": 0.7216796875,
+      "SHAP_Waterfall": 0.6181640625
+    }
+  },
+  {
+    "trust_weight": 0.4,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.82734375,
+      "LIME": 0.71875,
+      "SHAP_Waterfall": 0.6234375
+    }
+  },
+  {
+    "trust_weight": 0.425,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.81826171875,
+      "LIME": 0.7158203124999999,
+      "SHAP_Waterfall": 0.6287109375
+    }
+  },
+  {
+    "trust_weight": 0.45,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.8091796875,
+      "LIME": 0.7128906250000001,
+      "SHAP_Waterfall": 0.633984375
+    }
+  },
+  {
+    "trust_weight": 0.475,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.80009765625,
+      "LIME": 0.7099609375,
+      "SHAP_Waterfall": 0.6392578125
+    }
+  },
+  {
+    "trust_weight": 0.5,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.791015625,
+      "LIME": 0.70703125,
+      "SHAP_Waterfall": 0.64453125
+    }
+  },
+  {
+    "trust_weight": 0.525,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.78193359375,
+      "LIME": 0.7041015625,
+      "SHAP_Waterfall": 0.6498046875
+    }
+  },
+  {
+    "trust_weight": 0.55,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.7728515625,
+      "LIME": 0.7011718749999999,
+      "SHAP_Waterfall": 0.655078125
+    }
+  },
+  {
+    "trust_weight": 0.575,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.76376953125,
+      "LIME": 0.6982421875000001,
+      "SHAP_Waterfall": 0.6603515625
+    }
+  },
+  {
+    "trust_weight": 0.6,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.7546875,
+      "LIME": 0.6953125,
+      "SHAP_Waterfall": 0.665625
+    }
+  },
+  {
+    "trust_weight": 0.625,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.74560546875,
+      "LIME": 0.6923828125,
+      "SHAP_Waterfall": 0.6708984375
+    }
+  },
+  {
+    "trust_weight": 0.65,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.7365234375,
+      "LIME": 0.689453125,
+      "SHAP_Waterfall": 0.6761718750000001
+    }
+  },
+  {
+    "trust_weight": 0.675,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.72744140625,
+      "LIME": 0.6865234374999999,
+      "SHAP_Waterfall": 0.6814453125
+    }
+  },
+  {
+    "trust_weight": 0.7,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.718359375,
+      "SHAP_Waterfall": 0.68671875,
+      "LIME": 0.6835937500000001
+    }
+  },
+  {
+    "trust_weight": 0.725,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.70927734375,
+      "SHAP_Waterfall": 0.6919921874999999,
+      "LIME": 0.6806640625
+    }
+  },
+  {
+    "trust_weight": 0.75,
+    "best_methods": [
+      "ALE"
+    ],
+    "scores": {
+      "ALE": 0.7001953125,
+      "SHAP_Waterfall": 0.697265625,
+      "LIME": 0.677734375
+    }
+  },
+  {
+    "trust_weight": 0.775,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7025390625000001,
+      "ALE": 0.69111328125,
+      "LIME": 0.6748046875
+    }
+  },
+  {
+    "trust_weight": 0.8,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7078125,
+      "ALE": 0.68203125,
+      "LIME": 0.6718749999999999
+    }
+  },
+  {
+    "trust_weight": 0.825,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7130859375,
+      "ALE": 0.67294921875,
+      "LIME": 0.6689453125000001
+    }
+  },
+  {
+    "trust_weight": 0.85,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7183593749999999,
+      "LIME": 0.666015625,
+      "ALE": 0.6638671875
+    }
+  },
+  {
+    "trust_weight": 0.875,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7236328125,
+      "LIME": 0.6630859375,
+      "ALE": 0.65478515625
+    }
+  },
+  {
+    "trust_weight": 0.9,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7289062500000001,
+      "LIME": 0.66015625,
+      "ALE": 0.645703125
+    }
+  },
+  {
+    "trust_weight": 0.925,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7341796875,
+      "LIME": 0.6572265624999999,
+      "ALE": 0.63662109375
+    }
+  },
+  {
+    "trust_weight": 0.95,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.739453125,
+      "LIME": 0.6542968750000001,
+      "ALE": 0.6275390625
+    }
+  },
+  {
+    "trust_weight": 0.975,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.7447265624999999,
+      "LIME": 0.6513671875,
+      "ALE": 0.61845703125
+    }
+  },
+  {
+    "trust_weight": 1.0,
+    "best_methods": [
+      "SHAP_Waterfall"
+    ],
+    "scores": {
+      "SHAP_Waterfall": 0.75,
+      "LIME": 0.6484375,
+      "ALE": 0.609375
+    }
+  }
+]

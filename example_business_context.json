@@ -1,0 +1,27 @@
+{
+  "company_name": "Doanh nghiệp minh họa",
+  "industry": "Chuỗi cung ứng",
+  "ai_objective": "Giải thích từng dự báo nhu cầu để nhân viên kiểm tra đơn hàng.",
+  "model": {
+    "name": "Demand Random Forest",
+    "model_type": "random_forest",
+    "task_type": "regression",
+    "data_type": "tabular",
+    "prediction_output": "numeric",
+    "feature_types": [
+      "numerical",
+      "categorical"
+    ],
+    "has_prediction_function": true,
+    "has_reference_data": true,
+    "preprocessing_ready": true,
+    "model_object_available": true,
+    "version": "synthetic-demo-v1"
+  },
+  "target_users": [
+    "Nhân viên kế hoạch",
+    "Quản lý logistics"
+  ],
+  "required_scope": "local",
+  "user_ai_literacy": "intermediate"
+}

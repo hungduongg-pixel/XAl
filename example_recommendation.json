@@ -1,0 +1,257 @@
+{
+  "status": "ready",
+  "scoring_policy": "technical_eligibility_then_original_dots",
+  "recommendation_complete": true,
+  "context_id": "6512c0f0945f6d450da469dcc38ae9492c34b72776d743785ac5231ac44b875c",
+  "context": {
+    "company_name": "Doanh nghiệp minh họa",
+    "industry": "Chuỗi cung ứng",
+    "ai_objective": "Giải thích từng dự báo nhu cầu để nhân viên kiểm tra đơn hàng.",
+    "model": {
+      "name": "Demand Random Forest",
+      "model_type": "random_forest",
+      "task_type": "regression",
+      "data_type": "tabular",
+      "prediction_output": "numeric",
+      "feature_types": [
+        "numerical",
+        "categorical"
+      ],
+      "has_prediction_function": true,
+      "has_reference_data": true,
+      "preprocessing_ready": true,
+      "model_object_available": true,
+      "version": "synthetic-demo-v1"
+    },
+    "target_users": [
+      "Nhân viên kế hoạch",
+      "Quản lý logistics"
+    ],
+    "required_scope": "local",
+    "user_ai_literacy": "intermediate"
+  },
+  "data_kind": "synthetic_demo",
+  "candidate_methods": [
+    "LIME",
+    "SHAP_Waterfall",
+    "ALE"
+  ],
+  "best_methods": [
+    "LIME"
+  ],
+  "ranking": [
+    {
+      "method": "LIME",
+      "dots": 0.70703125,
+      "trust_weighted": 0.6484375,
+      "satisfaction_weighted": 0.765625,
+      "respondents": 3,
+      "recommendation_score": 0.70703125,
+      "eligible": true,
+      "suggested_adapter": "lime.lime_tabular.LimeTabularExplainer",
+      "notes": [
+        "Bộ giải thích text/image tiêu chuẩn trong danh mục này chỉ hỗ trợ classification.",
+        "Kết quả phụ thuộc lấy mẫu lân cận; cần kiểm tra độ ổn định.",
+        "Mã hóa categorical và khai báo categorical_features/categorical_names.",
+        "Đánh giá dựa trên khai báo; cần kiểm tra prediction wrapper, shape và phiên bản thư viện khi tích hợp."
+      ]
+    },
+    {
+      "method": "SHAP_Waterfall",
+      "dots": 0.64453125,
+      "trust_weighted": 0.75,
+      "satisfaction_weighted": 0.5390625,
+      "respondents": 3,
+      "recommendation_score": 0.64453125,
+      "eligible": true,
+      "suggested_adapter": "shap.Explainer(predict_fn, background, algorithm='permutation')",
+      "notes": [
+        "Phải chọn explainer và masker phù hợp; hỗ trợ mô hình cụ thể cần kiểm tra khi chạy.",
+        "Giải thích tổng thể cần tổng hợp trên tập mẫu đại diện.",
+        "Có thể thử TreeExplainer nếu model cụ thể được SHAP hỗ trợ; dùng fallback nếu không.",
+        "Chuẩn bị encoding/wrapper và masker phù hợp cho các biến categorical.",
+        "Đánh giá dựa trên khai báo; cần kiểm tra prediction wrapper, shape và phiên bản thư viện khi tích hợp."
+      ]
+    }
+  ],
+  "awaiting_feedback": [],
+  "excluded_methods": [
+    {
+      "method_id": "ALE",
+      "eligible": false,
+      "reasons": [
+        "Không đáp ứng phạm vi giải thích yêu cầu: local."
+      ],
+      "notes": [
+        "Phạm vi triển khai tham chiếu: ALE số của Alibi; không giải thích biến categorical.",
+        "Không thay thế giải thích cho từng dự đoán.",
+        "Chỉ tính ALE cho cột numerical; giữ các cột categorical làm điều kiện đầu vào.",
+        "Đánh giá dựa trên khai báo; cần kiểm tra prediction wrapper, shape và phiên bản thư viện khi tích hợp."
+      ],
+      "suggested_adapter": "alibi.explainers.ALE (numerical features only)",
+      "dots": 0.791015625
+    }
+  ],
+  "compatibility": [
+    {
+      "method_id": "LIME",
+      "eligible": true,
+      "reasons": [],
+      "notes": [
+        "Bộ giải thích text/image tiêu chuẩn trong danh mục này chỉ hỗ trợ classification.",
+        "Kết quả phụ thuộc lấy mẫu lân cận; cần kiểm tra độ ổn định.",
+        "Mã hóa categorical và khai báo categorical_features/categorical_names.",
+        "Đánh giá dựa trên khai báo; cần kiểm tra prediction wrapper, shape và phiên bản thư viện khi tích hợp."
+      ],
+      "suggested_adapter": "lime.lime_tabular.LimeTabularExplainer"
+    },
+    {
+      "method_id": "SHAP_Waterfall",
+      "eligible": true,
+      "reasons": [],
+      "notes": [
+        "Phải chọn explainer và masker phù hợp; hỗ trợ mô hình cụ thể cần kiểm tra khi chạy.",
+        "Giải thích tổng thể cần tổng hợp trên tập mẫu đại diện.",
+        "Có thể thử TreeExplainer nếu model cụ thể được SHAP hỗ trợ; dùng fallback nếu không.",
+        "Chuẩn bị encoding/wrapper và masker phù hợp cho các biến categorical.",
+        "Đánh giá dựa trên khai báo; cần kiểm tra prediction wrapper, shape và phiên bản thư viện khi tích hợp."
+      ],
+      "suggested_adapter": "shap.Explainer(predict_fn, background, algorithm='permutation')"
+    },
+    {
+      "method_id": "ALE",
+      "eligible": false,
+      "reasons": [
+        "Không đáp ứng phạm vi giải thích yêu cầu: local."
+      ],
+      "notes": [
+        "Phạm vi triển khai tham chiếu: ALE số của Alibi; không giải thích biến categorical.",
+        "Không thay thế giải thích cho từng dự đoán.",
+        "Chỉ tính ALE cho cột numerical; giữ các cột categorical làm điều kiện đầu vào.",
+        "Đánh giá dựa trên khai báo; cần kiểm tra prediction wrapper, shape và phiên bản thư viện khi tích hợp."
+      ],
+      "suggested_adapter": "alibi.explainers.ALE (numerical features only)"
+    }
+  ],
+  "dots_report": {
+    "data_kind": "synthetic_demo",
+    "best_methods": [
+      "ALE"
+    ],
+    "ranking": [
+      {
+        "method": "ALE",
+        "dots": 0.791015625,
+        "trust_weighted": 0.609375,
+        "satisfaction_weighted": 0.97265625,
+        "respondents": 3
+      },
+      {
+        "method": "LIME",
+        "dots": 0.70703125,
+        "trust_weighted": 0.6484375,
+        "satisfaction_weighted": 0.765625,
+        "respondents": 3
+      },
+      {
+        "method": "SHAP_Waterfall",
+        "dots": 0.64453125,
+        "trust_weighted": 0.75,
+        "satisfaction_weighted": 0.5390625,
+        "respondents": 3
+      }
+    ],
+    "per_respondent": {
+      "ALE": [
+        {
+          "participant_id": "R1",
+          "trust": 0.609375,
+          "satisfaction": 1.0,
+          "trust_change_raw": 0.875,
+          "expertise_weight": 1.0,
+          "trust_weight": 0.5,
+          "combined_score": 0.8046875
+        },
+        {
+          "participant_id": "R2",
+          "trust": 0.625,
+          "satisfaction": 0.96875,
+          "trust_change_raw": 1.0,
+          "expertise_weight": 0.75,
+          "trust_weight": 0.5,
+          "combined_score": 0.796875
+        },
+        {
+          "participant_id": "R3",
+          "trust": 0.5625,
+          "satisfaction": 0.875,
+          "trust_change_raw": 0.5,
+          "expertise_weight": 0.25,
+          "trust_weight": 0.5,
+          "combined_score": 0.71875
+        }
+      ],
+      "LIME": [
+        {
+          "participant_id": "R1",
+          "trust": 0.625,
+          "satisfaction": 0.75,
+          "trust_change_raw": 1.0,
+          "expertise_weight": 1.0,
+          "trust_weight": 0.5,
+          "combined_score": 0.6875
+        },
+        {
+          "participant_id": "R2",
+          "trust": 0.6875,
+          "satisfaction": 0.75,
+          "trust_change_raw": 1.5,
+          "expertise_weight": 0.75,
+          "trust_weight": 0.5,
+          "combined_score": 0.71875
+        },
+        {
+          "participant_id": "R3",
+          "trust": 0.625,
+          "satisfaction": 0.875,
+          "trust_change_raw": 1.0,
+          "expertise_weight": 0.25,
+          "trust_weight": 0.5,
+          "combined_score": 0.75
+        }
+      ],
+      "SHAP_Waterfall": [
+        {
+          "participant_id": "R1",
+          "trust": 0.71875,
+          "satisfaction": 0.5625,
+          "trust_change_raw": 1.75,
+          "expertise_weight": 1.0,
+          "trust_weight": 0.5,
+          "combined_score": 0.640625
+        },
+        {
+          "participant_id": "R2",
+          "trust": 0.8125,
+          "satisfaction": 0.5625,
+          "trust_change_raw": 2.5,
+          "expertise_weight": 0.75,
+          "trust_weight": 0.5,
+          "combined_score": 0.6875
+        },
+        {
+          "participant_id": "R3",
+          "trust": 0.6875,
+          "satisfaction": 0.375,
+          "trust_change_raw": 1.5,
+          "expertise_weight": 0.25,
+          "trust_weight": 0.5,
+          "combined_score": 0.53125
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Technical compatibility is based on declared metadata, not a runtime explainer test."
+  ]
+}

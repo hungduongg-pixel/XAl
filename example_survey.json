@@ -1,0 +1,264 @@
+{
+  "data_kind": "synthetic_demo",
+  "trust_scale": {
+    "min": 1,
+    "max": 5,
+    "items": 8
+  },
+  "satisfaction_scale": {
+    "min": 1,
+    "max": 5,
+    "items": 8
+  },
+  "participants": [
+    {
+      "id": "R1",
+      "expertise_weight": 1.0,
+      "trust_weight": 0.5,
+      "trust_before": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "responses": {
+        "LIME": {
+          "trust_after": [
+            4,
+            4,
+            4,
+            5,
+            4,
+            4,
+            4,
+            3
+          ],
+          "satisfaction": [
+            4,
+            4,
+            4,
+            4,
+            5,
+            4,
+            4,
+            3
+          ]
+        },
+        "SHAP_Waterfall": {
+          "trust_after": [
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5
+          ],
+          "satisfaction": [
+            3,
+            3,
+            4,
+            3,
+            3,
+            4,
+            3,
+            3
+          ]
+        },
+        "ALE": {
+          "trust_after": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            3,
+            4,
+            4
+          ],
+          "satisfaction": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        }
+      }
+    },
+    {
+      "id": "R2",
+      "expertise_weight": 0.75,
+      "trust_weight": 0.5,
+      "trust_before": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "responses": {
+        "LIME": {
+          "trust_after": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "satisfaction": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "SHAP_Waterfall": {
+          "trust_after": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "satisfaction": [
+            3,
+            3,
+            3,
+            4,
+            3,
+            3,
+            3,
+            4
+          ]
+        },
+        "ALE": {
+          "trust_after": [
+            3,
+            4,
+            3,
+            4,
+            3,
+            4,
+            3,
+            4
+          ],
+          "satisfaction": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "id": "R3",
+      "expertise_weight": 0.25,
+      "trust_weight": 0.5,
+      "trust_before": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "responses": {
+        "LIME": {
+          "trust_after": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "satisfaction": [
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ]
+        },
+        "SHAP_Waterfall": {
+          "trust_after": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5
+          ],
+          "satisfaction": [
+            2,
+            3,
+            2,
+            3,
+            2,
+            3,
+            2,
+            3
+          ]
+        },
+        "ALE": {
+          "trust_after": [
+            3,
+            4,
+            3,
+            4,
+            3,
+            4,
+            3,
+            4
+          ],
+          "satisfaction": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5
+          ]
+        }
+      }
+    }
+  ]
+}
